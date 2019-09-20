@@ -26,7 +26,7 @@ To authenticate this tool with Crypteron's data security service:
 2. Get your `AppSecret` from the Crypteron dashboard. This is a glorified API key for authentication
 3. Finally, as per your security and operational practices, add the AppSecret to their
    - the environment variable `CRYPTERON_APPSECRET` OR
-   - the `crypteron.appsecret.json` file (same location as tool). An example `secrets.json` file is:
+   - the `crypteron.appsecret.json` file (same location as tool). An example `crypteron.appsecret.json` file is:
      `{"crypteron":{"appSecret":"YourAppSecretFromDashboardGoesHere"}}`
    Crypteron CipherTool will pick it up from either location. If both are present, the environment variable is selected.   
 
