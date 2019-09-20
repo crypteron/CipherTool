@@ -4,6 +4,8 @@ Crypteron CipherTool is an enterprise grade encryption tool that uses Crypteron'
 
 ## Usage Scenario 
 
+Here are some example scenarios but we'd love to hear how this helps you. Or even better, what we can do to improve the tool(s) and services to better serve your business use case.
+
 ### Black Box workflows
 
 The typical use case is when you have sensitive data in business workflows involving "blackboxes". Blackboxes are software/systems/dataflows you don't control at a level enough to integrate directly using Crypteron's native SDKs.
@@ -24,9 +26,11 @@ To authenticate this tool with Crypteron's data security service:
 2. Get your `AppSecret` from the Crypteron dashboard. This is a glorified API key for authentication
 3. Finally, as per your security and operational practices, add the AppSecret to their
    - the environment variable `CRYPTERON_APPSECRET` OR
-   - the `secrets.json` file (same location as tool). An example `secrets.json` file is:
+   - the `crypteron.appsecret.json` file (same location as tool). An example `secrets.json` file is:
      `{"crypteron":{"appSecret":"YourAppSecretFromDashboardGoesHere"}}`
-   Crypteron CipherTool will pick it up from either location. If both are present, the environment variable is selected.
+   Crypteron CipherTool will pick it up from either location. If both are present, the environment variable is selected.   
+
+To set the environment variables on windows, simply issue `$env:CRYPTERON_APPSECRET="yourAppSecretHere"` in powershell. On linux it's `export CRYPTERON_APPSECRET="yourAppSecretHere"`
 
 ## Usage
 
